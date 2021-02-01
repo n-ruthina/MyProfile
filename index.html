@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>My-Profile</title>
+    <link rel="stylesheet" href="stylesheet.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Alegreya+Sans+SC:300" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Caveat" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Quicksand" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=M+PLUS+1p&display=swap" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Kosugi+Maru|M+PLUS+1p&display=swap" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome-animation/0.0.10/font-awesome-animation.css" type="text/css" media="all" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Kosugi+Maru|M+PLUS+1p|Noto+Serif+JP|Sawarabi+Mincho&display=swap" />
+    <script type="text/javascript" src="http://code.jquery.com/jquery-3.1.0.min.js"></script>
+    <script>
+      $(function(){
+        // #で始まるリンクをクリックしたら実行されます
+        $('a[href^="#"]').click(function() {
+          // スクロールの速度
+          var speed = 800; // ミリ秒で記述
+          var href= $(this).attr("href");
+          var target = $(href == "#" || href == "" ? 'html' : href);
+          var position = target.offset().top;
+          $('body,html').animate({scrollTop:position}, speed, 'swing');
+          return false;
+        });
+      });
+    </script>
+    <title>jQuery</title>
+  </head>
+  <body>
+    <header>
+      <div class="head">
+        <h1>No.177</h1>
+        <ul>
+          <li><a href="#profile">Profile</a></li>
+          <li><a href="#internship">Internship</a></li>
+          <li><a href="#study">Study</a></li>
+          <li><a href="#message">Message</a></li>
+        </ul>
+      </div>
+    </header>
+    <div class="top">
+      <h2>Nanami</h2>
+      <p>To me, success is choice and opportunity.</p>
+    </div>
+    <div class="space" id="profile"></div>
+    <div class="profile">
+      <h3>Profile</h3>
+      <div class="img">
+        <img src="img/flower420157_TP_V.jpg" class="flower" />
+        <img src="img/CAD8DCF4-A8D2-4839-A4A1-66F2272A0B74.jpg" class="profile-image" />
+      </div>
+      <div class="character">
+        <div class="cp">
+          <p># nanami</p>
+          <p># 1998 / 3 / 2</p>
+          <p># Komazawa Univ.</p>
+          <p># Tokyo, Japan</p>
+          <p># hobby : book, work out, eat, beer</p>
+          <p># special ability : piano, dance</p>
+        </div>
+      </div>
+    </div>
+    <div class="space" id="internship"></div>
+    <div class="internship">
+      <h3>Intern</h3>
+      <div class="intern">
+        <div class="firm">
+          <h4><a href ="https://www.cyberowl.co.jp/" class="button"># Cyber Owl</a>　<span class="under">2018/8~2020/8</span></h4>
+          <p>
+            良い記事を作り、検索順位を上げるために競合サイトのコンテンツ分析を行う。
+            上位検索キーワードを１つ１つ分析していく。
+            記事内で紹介するもの（カップ麺の試食など）の検証を行う。
+            また、出来上がった記事のコピペチェックやファクトチェックを行う。
+            他の学生のフィードバックなども行う。
+          </p>
+        </div><br>
+        <div class="firm">
+          <h4><a href ="https://about.google/intl/ALL_jp/" class="button"># Google</a>　<span class="under">2020/8</span></h4>
+          <p>
+            Google Consultant Academy (GCA)<br>
+            Googleのコンサルテーション、デジタルマーケティングについて学び、
+            チームでの課題解決及び、チームごとでのプレゼンを行う。<br>
+            オンライン講座を受け、テストに合格し、<br>
+            Google Fundamentals of digital marketing<br>
+            という資格を取得。
+          </p>
+        </div><br>
+        <div class="firm">
+          <h4><a href ="https://infratop.jp/" class="button"># Infratop</a>　<span class="under">2020/12~</span></h4>
+          <p>
+            エンジニアのメンターとして、プログラミングスクールの受講生のカリキュラムで
+            わからないところがあった際に質問に答えたり、受講生の課題の採点などを行う。
+          </p>
+        </div><br>
+        <div class="firm">
+          <h4><a href ="https://corp.rakuten.co.jp/" class="button"># Rakuten</a>　<span class="under">2021/1~2021/3</span></h4>
+          <p>
+            ...Coming soon!
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="space" id="study"></div>
+    <div class="study">
+      <h3>Study</h3>
+      <div class="contents1">
+        <div class="box">
+          <div class="box1">
+            <h4># HTML</h4>
+            <div class="box2">
+              <div class="box3">
+                <img src="img/html5.png">
+              </div>
+              <div class="box3">
+                <h5>\ 80% /</h5>
+                <p>こちらのサイトのような基本的なものは、作ることができます。</p>
+              </div>
+            </div>
+          </div>
+          <div class="box1">
+            <h4># CSS</h4>
+            <div class="box2">
+              <div class="box3">
+                <img src="img/css3.png">
+              </div>
+              <div class="box3">
+                <h5>\ 80% /</h5>
+                <p>CSSをつかってデザインを考えるのは、すごく楽しいです。</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="box">
+          <div class="box1">
+            <h4># C++</h4>
+            <div class="box2">
+              <div class="box3">
+                <img src="img/c++.png">
+              </div>
+              <div class="box3">
+                <h5>\ 60% /</h5>
+                <p>
+                  最近はC++で<a href="https://atcoder.jp/">#AtCoder</a>の問題を
+                  解くことが多いです。
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="box1">
+            <h4># Python</h4>
+            <div class="box2">
+              <div class="box3">
+                <img src="img/python2.png">
+              </div>
+              <div class="box3">
+                <h5>\ 70% /</h5>
+                <p>
+                  プログラミングを始めて、一番最初に勉強した言語です。
+                  AtCoderで問題を解く際にも使っています。
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="box">
+          <div class="box1">
+            <h4># Ruby</h4>
+            <div class="box2">
+              <div class="box3">
+                <img src="img/ruby.png">
+              </div>
+              <div class="box3">
+                <h5>\ 80% /</h5>
+                <p>
+                  簡単な文法、条件分岐、繰り返し処理などを勉強しました。
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="box1">
+            <h4># Rails</h4>
+            <div class="box2">
+              <div class="box3">
+                <img src="img/ruby-on-rails.png">
+              </div>
+              <div class="box3">
+                <h5>\ 70% /</h5>
+                <p>
+                  <a href="https://github.com/n-ruthina/Bookers">#本の投稿サイト</a>を作成し、
+                  インターンでもRailsについて教えているため、一番勉強している言語です。
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="space" id="message"></div>
+    <div class="message">
+      <h3>Message</h3>
+      <div class="me">
+        <P>
+          小さい頃から ものづくり が好きで<br>
+          ダンボールで家の模型をつくってみたり、<br>
+          ビー玉を使いピタゴラスイッチのような装置をつくってみたり<br>
+          自分で考えついたものをとにかくつくる<br>
+          ということをしていたような気がします。<br>
+          そして、プログラミングに出会い、<br>
+          エンジニアとして ものづくり をして、<br>
+          <span>世界中の人々に影響を与えられるようになりたい!!!</span><br>
+          と思うようになりました。<br>
+          If you can dream it, you can do it.<br>
+          夢見ることができれば、それは実現できる。<br>
+        </P>
+      </div>
+    </div>
+    <footer>
+      <div class="list1">
+        <ul>
+          <li><a href="#profile">Profile</a></li>
+          <li><a href="#internship">Internship</a></li>
+          <li><a href="#study">Study</a></li>
+          <li><a href="#message">Message</a></li>
+        </ul>
+      </div>
+      <div class="list2">
+        <ul>
+          <li>
+            <a href="https://github.com/n-ruthina"
+              ><i class="fab fa-github-square faa-float animated"></i
+            ></a>
+          </li>
+          <li>
+            <a href="https://www.facebook.com/profile.php?id=100026623231022"
+              ><i class="fab fa-facebook-square faa-float animated"></i
+            ></a>
+          </li>
+          <li>
+            <a href="https://twitter.com/neitea"
+              ><i class="fab fa-twitter-square faa-float animated"></i
+            ></a>
+          </li>
+        </ul>
+      </div>
+      <p>I love beer ❤︎</p>
+    </footer>
+  </body>
+</html>
+<script>
+$(".goSection").on("click", function() {
+
+  // クリックされた要素のhref属性の値を取得 例：#first
+  const scrollTarget = $(this)[0].attributes[1].nodeValue;
+
+  // 取得した値のid属性がついた要素の位置を取得
+  const offsetTop = $(scrollTarget).offset().top;
+
+  // 取得した箇所に移動
+  $("html, body").animate({ scrollTop: offsetTop }, 200);
+
+  return false;
+});
+</script>
